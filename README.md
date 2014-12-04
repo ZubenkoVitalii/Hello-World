@@ -18,7 +18,7 @@ https://github.com/ZubenkoVitalii/Hello-World/tree/master
 2) Please, see the code in Get_candidates_with_id.py.
 3) Please, see the code in POST_add_new_candidate.py.
 4) Please, see the code in DELETE_candidate_with_id.py.
-5) As I anderstood the task, to verify that data was added to the server succesfully, both codes (GET_list_of_candidates.py, Get_candidates_with_id.py) can be used. Also, I can show the candidate with any id (Get_candidates_with_id.py), which has been added by code in (POST_add_new_candidate.py). Is it correct?
+5) As I understood the task, to verify that data was added to the server succesfully, both codes (GET_list_of_candidates.py, Get_candidates_with_id.py) can be used. Also, I can show the candidate with any id (Get_candidates_with_id.py), which has been added by code in (POST_add_new_candidate.py). Is it correct?
 6) In this case, does correctness mean that the values "name" and "position" aren't null? 
 If, for example, {"id": 806, "name": null, "position": null}, should the code print 'incorrect name and/or position'? Or something else? Could you specify?
 7-8) "Try to create positive and negative verifications". - Does it mean that I need add some candidates with correct and incorrect "name" and/or "position" (null, numbers, images, spesial symbols,...or add extra key:value "age":"20",...) and check the candidates availability on server?
