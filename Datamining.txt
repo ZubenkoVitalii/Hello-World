@@ -1,0 +1,5 @@
+1) Count % of successful requests per hour: 
+$ grep -R "15/Oct/2014:13" /home/user/datamining.log | grep "200" | wc - l 
+82
+2)  Results should be stored in file:
+$ grep -R "15/Oct/2014:13" /home/user/datamining.log | grep "200" | wc - l> /home/user/result.txt
