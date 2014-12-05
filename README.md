@@ -22,3 +22,6 @@ https://github.com/ZubenkoVitalii/Hello-World/tree/master
 6) In this case, does correctness mean that the values "name" and "position" aren't null? 
 If, for example, {"id": 806, "name": null, "position": null}, should the code print 'incorrect name and/or position'? Or something else? Could you specify?
 7-8) "Try to create positive and negative verifications". - Does it mean that I need add some candidates with correct and incorrect "name" and/or "position" (null, numbers, images, special symbols,...or add extra key:value "age":"20",...) and check the candidates availability on server?
+
+Datamining tasks: 
+Answers are stored in Datamining.txt.
