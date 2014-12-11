@@ -26,6 +26,7 @@ ____________________
 
 ______________________
 
+>>> import urllib.request
 >>> request_url = 'http://qainterview.cogniance.com/candidates/86'
 >>> request = urllib.request.Request(request_url)
 >>> request.get_method = lambda: 'DELETE'
