@@ -1,12 +1,13 @@
->>> import json
 >>> from urllib.request import urlopen
->>> response = urlopen('http://qainterview.cogniance.com/candidates')
->>> html = response.read().decode('utf-8')
->>> candidates = json.loads(html)['candidates']
->>> for item in candidates:
-	if item['id'] == 93:
-		print(response.getcode())
+>>> res = urlopen("http://qainterview.cogniance.com/candidates")
+>>> print(res.getcode())
+200
+>>> res.close
+___________________
 
+from urllib.request import urlopen
+res = urlopen("http://qainterview.cogniance.com/candidates/50")
+print(res.getcode())
 		
 200
 >>> res.close
@@ -37,8 +38,4 @@ ______________________
 
 ______________________
 
->>> from urllib.request import urlopen
->>> res = urlopen("http://qainterview.cogniance.com/candidates")
->>> print(res.getcode())
-200
->>> res.close
+
