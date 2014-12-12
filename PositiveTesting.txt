@@ -1,0 +1,119 @@
+For all methods (GET, GET, POST, DELETE)
+1) All data, which were used in GET_list_of_candidates.py, Get_candidates_with_id.py, POST_add_new_candidate.py, DELETE_candidate_with_id.py.
+
+For POST method (take into account absence any validation for names and positions):
+2) Input number:
+>>> json_dict = {  "name": 1/3, "position": -1/3 }
+...
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 72, 
+    "name": 0.3333333333333333, 
+    "position": -0.3333333333333333
+  }
+}
+>>> print(res.getcode())
+201
+3) Input object
+json_dict = {  "name": "best", "position":{
+       "street": "Address",
+       "city": "Kyiv",
+       "postalCode": "03067"}}
+...
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 1304, 
+    "name": "best", 
+    "position": {
+      "city": "Kyiv", 
+      "postalCode": "03067", 
+      "street": "Address"
+    }
+  }
+}
+>>> print(res.getcode())
+201
+3)  Input Boolean
+>>> json_dict = {  "name": True, "position": "QA" }
+...
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 1305, 
+    "name": true, 
+    "position": "QA"
+  }
+}
+>>> print(res.getcode())
+201
+4) Input array
+>>> json_dict = {  "name": True, "position":[
+   { "language":"Java" , "edition":"second" },
+   { "language":"C++" , "lastName":"fifth" },
+   { "language":"C" , "lastName":"third" }
+  ]}
+...
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 1306, 
+    "name": true, 
+    "position": [
+      {
+        "edition": "second", 
+        "language": "Java"
+      }, 
+      {
+        "language": "C++", 
+        "lastName": "fifth"
+      }, 
+      {
+        "language": "C", 
+        "lastName": "third"
+      }
+    ]
+  }
+}
+>>> print(res.getcode())
+201
+5) Input Null
+>>> json_dict = {  "name": None, "position": None }
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 64, 
+    "name": null, 
+    "position": null
+  }
+}
+...
+>>> print(res.getcode())
+201 
+6) Input real number
+>>> json_dict = {  "name": 10.2, "position": 15.555 }
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 85, 
+    "name": 10.2, 
+    "position": 15.555
+  }
+}
+...
+>>> print(res.getcode())
+201
+7) Input Cyrillic:
+>>>json_dict = {  "name": "Абра-кадабра і", "position": "Пілігрим" }
+>>> print(res.read().decode("cp1251"))
+{
+  "candidate": {
+    "id": 64, 
+    "name": "\u0410\u0431\u0440\u0430-\u043a\u0430\u0434\u0430\u0431\u0440\u0430 \u0456", 
+    "position": "\u041f\u0456\u043b\u0456\u0433\u0440\u0438\u043c"
+  }
+}
+...
+>>> print(res.getcode())
+201
