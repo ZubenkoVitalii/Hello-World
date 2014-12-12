@@ -17,7 +17,7 @@ Answers:
 2) Please, see the code in Get_candidates_with_id.py.
 3) Please, see the code in POST_add_new_candidate.py.
 4) Please, see the code in DELETE_candidate_with_id.py.
-5) To verify that data was added to the server succesfully, both codes (GET_list_of_candidates.py, Get_candidates_with_id.py) can be used. Also, I can show the candidate with any id (Get_candidates_with_id.py), which has been added by code in (POST_add_new_candidate.py). Is it correct?
+5) To verify that data was added to the server successfully, both codes (GET_list_of_candidates.py, Get_candidates_with_id.py) can be used. Also, I can show the candidate with any id (Get_candidates_with_id.py), which has been added by code in (POST_add_new_candidate.py). Is it correct?
 6) Please, see the code in ReturnedResponseCodes.py.
 7) a) Please, see the code in VerifyGetListOfCandidate.py for method "GET, http://qainterview.cogniance.com/candidates, gives a list of all candidates". This method works correctly.
   b) Please, see the code in VerifyGetCandidateWithID.py for method "GET, http://qainterview.cogniance.com/candidates/<cand_id>, shows a candidate with id=<cand_id>". This method works incorrectly. At specifying in the request the candidate with any id, we always see in the response the first candidate in list of candidates.
