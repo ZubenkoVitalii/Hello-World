@@ -14,3 +14,6 @@ if cand_resp and type(cand_resp) == dict:
     print('Check if we received correct info for candidates')
 else:
     print("Candidates don't exist")
+
+Good response from the server with candidates info
+Check if we received correct info for candidates
