@@ -19,11 +19,12 @@ if res.getcode() != 201:
 
 json_resp = res.read().decode("cp1251")
 cand_resp = json.loads(json_resp)
-
+#проверяем, есть ли не пустой ответ от сервера, это словарь и он имеет ключ candidate и в масиве ключа candidate есть ключ id 
 if cand_resp and type(cand_resp) == dict and 'candidate' in cand_resp.keys() and 'id' in cand_resp['candidate'].keys():
     print('Candidate added, check if name and position are correct')
     flag = True
     for k in check_data.keys():
+        #проверяем наличие ключей, указанных в check_data, в response from server
         if k not in cand_resp['candidate'].keys() or cand_resp['candidate'][k] != check_data[k]:
             flag = False
             break
