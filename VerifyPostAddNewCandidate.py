@@ -24,7 +24,7 @@ if cand_resp and type(cand_resp) == dict and 'candidate' in cand_resp.keys() and
     print('Candidate added, check if name and position are correct')
     flag = True
     for k in check_data.keys():
-        #проверяем наличие ключей, указанных в check_data, в response from server
+        #проверяем наличие ключей, указанных в check_data, в response from server # from array with index 'k'
         if k not in cand_resp['candidate'].keys() or cand_resp['candidate'][k] != check_data[k]:
             flag = False
             break
