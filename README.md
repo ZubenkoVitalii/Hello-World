@@ -48,5 +48,5 @@ Answers:
 Datamining tasks: 
 Answers are given in Datamining.txt.
 
-Python & Redis: 
+Python & Redis task: 
 Answers are given in RedisPython.py.
