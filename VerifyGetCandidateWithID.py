@@ -8,7 +8,7 @@
 	
  json_resp = response.read().decode("cp1251")
  cand_resp = json.loads(json_resp)
- #проверяем, есть ли не пустой ответ от сервера, это словарь и он имеет ключ candidate и в масиве ключа candidate есть ключ id 
+  # verify that it is not empty response from the server, it is a dictionary, and it has a key 'candidate' and 'candidate' key array has key 'id'
  if cand_resp and type(cand_resp) == dict and 'candidate' in cand_resp.keys() and 'id' in cand_resp['candidate'].keys():
 	# Get item (string type) into variable received_id from array with index 'id'
 	received_id = cand_resp['candidate']['id'].__str__()
