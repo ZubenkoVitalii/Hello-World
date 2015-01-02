@@ -28,3 +28,6 @@ Answers:
 
 Datamining tasks: 
 Answers are given in Datamining.txt.
+
+Python & Redis: 
+Answers are given in RedisPython.py.
