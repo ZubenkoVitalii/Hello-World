@@ -11,4 +11,4 @@ print(res.read().decode("cp1251"))
     "position": "QA_intern"
 res.close
 <bound method HTTPResponse.close of <http.client.HTTPResponse object at 0x0000000003A99320>>
->>> 
+Method GET, http://qainterview.cogniance.com/candidates/<cand_id>, shows a candidate with id=<cand_id> WORKS INCORRECTLY.  
