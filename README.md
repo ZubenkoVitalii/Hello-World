@@ -2,7 +2,9 @@ Hello-World
 ===========
 
 My first repository on GitHub.
+
 Python tasks:
+
 1) GET, http://qainterview.cogniance.com/candidates, gives a list of all candidates. 
 
 2) GET, http://qainterview.cogniance.com/candidates/<cand_id>, shows a candidate with id=<cand_id>. 
