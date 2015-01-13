@@ -1,8 +1,8 @@
 DELETE method:
 
 1) Delete of candidate with non-existent "id".
-request_url = 'http://qainterview.cogniance.com/candidates/86'
-urllib.error.HTTPError: HTTP Error 404: NOT FOUND
+>>> request_url = 'http://qainterview.cogniance.com/candidates/86'
+>>> urllib.error.HTTPError: HTTP Error 404: NOT FOUND
 
 2) Delete of candidate with "id":null
 >>> request_url = 'http://qainterview.cogniance.com/candidates/None'
